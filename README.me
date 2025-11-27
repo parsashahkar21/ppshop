@@ -1,39 +1,37 @@
-# PPShop
-
 PPShop is a simple Java-based shopping application that demonstrates core e-commerce concepts such as user authentication, product management, shopping cart handling, and basic admin features.  
 It was built as a desktop / console project using plain Java (no external frameworks) and simple text files as storage.
 
 ---
 
-## Features
+Features
 
-### 👥 User Management
-- Sign up as a **normal user**
+User Management
+- Sign up as a normal user
 - Log in / log out functionality
 - Separate classes for:
   - `normal_user` (customer)
   - `admin_user` (administrator)
   - Base `user` model
 
-### 🔐 Authentication & Security
+Authentication & Security
 - Login and signup pages (`loginpage.java`, `signinpage.java`)
 - Basic password handling using a hashing utility (`hashing.java`)
 - Simple validation logic
 
-### 🛒 Shopping
+Shopping
 - Product model and management (`product.java`)
 - Product listing on normal user pages (`normalpage.java`, `mypage.java`)
 - Add items to cart (`cartpage.java`)
 - View shopping history (`hiscard.java`)
 - Cart data stored in `cart.txt`
 
-### 🧑‍💻 Admin Panel
+Admin Panel
 - Admin dashboard (`adminpage.java`)
 - Create / edit / delete products (`editpage.java`)
 - View list of registered users (`showusers.java`)
 - Admin profile page (`aprofilepage.java`)
 
-### 💾 Data Storage
+Data Storage
 - Simple persistence using text files:
   - `ndata.txt` – normal user data
   - `adata.txt` – admin user data
@@ -43,11 +41,11 @@ It was built as a desktop / console project using plain Java (no external framew
 
 ---
 
-## Project Structure
+Project Structure
 
 Key files in the repository:
 
-```text
+text
 App.java              // Main entry point of the application
 user.java             // Base user class
 normal_user.java      // Normal (customer) user
@@ -76,4 +74,4 @@ Arraylist.java        // Custom list / data container
 ndata.txt             // Normal users data
 adata.txt             // Admin users data
 pdata.txt             // Products data
-cart.txt              // Cart / orders data
+cart.txt              // Cart / orders data    
